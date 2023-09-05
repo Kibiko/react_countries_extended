@@ -30,8 +30,14 @@ const CountriesContainer = () => {
     };
 
     const nextPage = () => {
-        if(pageNumber < countries.length/maxItemsPerPage){
-            setPageNumber(pageNumber + 1);
+        if(!filtered){
+            if(pageNumber < countries.length/maxItemsPerPage){
+                setPageNumber(pageNumber + 1);
+            }
+        } else {
+            if(pageNumber< filteredCountries.length/maxItemsPerPage){
+                setPageNumber(pageNumber + 1);
+            }
         }
     };
 
