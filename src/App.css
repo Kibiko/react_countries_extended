@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+.header{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.page_layout{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 5em;
+}
+
+.all_countries{
+  grid-column: 1;
+}
+
+.visited_countries{
+  grid-column: 2;
+}
+
+.buttons{
+  margin: 2em;
+}
+
+p{
+  margin-left: 2em;
+}
