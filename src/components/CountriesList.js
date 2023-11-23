@@ -4,7 +4,7 @@ const CountriesList = ({countries, pageNumber, maxItemsPerPage, moveCountryToVis
 
     const mappedCountries = countries.filter((country, index) => {
         if(index >= (pageNumber-1)*maxItemsPerPage && index < pageNumber*maxItemsPerPage){
-            return country;
+            return true;
         }
     })
         .map((country, index) => {
