@@ -6,6 +6,7 @@ const CountriesList = ({countries, pageNumber, maxItemsPerPage, moveCountryToVis
         if(index >= (pageNumber-1)*maxItemsPerPage && index < pageNumber*maxItemsPerPage){
             return true;
         }
+        return false;
     })
         .map((country, index) => {
         return <Country 
